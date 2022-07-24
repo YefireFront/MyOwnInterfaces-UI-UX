@@ -18,10 +18,9 @@
     }
     h2{
         margin-bottom:10px;
-        text-transform: uppercase;
         font-weight: 600;
         font-size:20px;
-        font-family: $fuente2
+        @include tittle($fuente2);
     }
     img{
         border-radius: 10px;

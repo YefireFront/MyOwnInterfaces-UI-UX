@@ -9,9 +9,39 @@ $varation-color: #3f579a;
 	box-sizing: border-box;
 }
 
+@mixin box{
+	border-radius:20px;
+	box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.50);
+	color:$primary-color;
+	background:$clear-color;	
+}
+
+@mixin tittle ($font){
+	@if $font == $fuente1{
+		font-family: $fuente1
+	}@else{
+		font-family: $fuente2;
+		text-transform: uppercase;
+	}	
+}
+
+@function get-opacity($color,$quantity){
+	@return rgba($color,$quantity);
+}
+
+
+
+@each $header, $size in (h1 :30px, h2: 25px, h3: 20px)  {
+	#{$header}{
+		font-size: $size;
+		margin:0;
+	}
+	
+}
+
 body {
 	margin: 0;
-	font-family: $fuente1;
+	@include tittle($fuente1);
 }
 
 main {
@@ -20,13 +50,3 @@ main {
 	height: 100vh;
 }
 
-@mixin box{
-	border-radius:20px;
-	box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.50);
-	color:$primary-color;
-	background:$clear-color;	
-}
-
-@function get-opacity($color,$quantity){
-	@return rgba($color,$quantity);
-}
