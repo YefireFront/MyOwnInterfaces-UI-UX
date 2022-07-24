@@ -11,11 +11,20 @@
         margin-right: 10px
     }
 
-    &__fotosadicionales img{
+    &__fotos-adicionales img{
         height:70px;
         margin-right:5px;
         margin-bottom: 5px;
-
+    }
+    h2{
+        margin-bottom:10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size:20px;
+        font-family: $fuente2
+    }
+    img{
+        border-radius: 10px;
     }
 
 }

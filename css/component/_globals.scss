@@ -26,3 +26,7 @@ main {
 	color:$primary-color;
 	background:$clear-color;	
 }
+
+@function get-opacity($color,$quantity){
+	@return rgba($color,$quantity);
+}
