@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* first line color */
+$color-primary: #f32525dc;
+$color-primary-light: #e04545dc;
+$color-primary-dark: #be0404dc;
+$color-secondary: #3d64b9e5;
+$color-secondary-light: #6081c9e5;
+$color-secondary-dark: #1642a3e5;
+
+/* secunde line color */
+$color-grey: #777;
+$color-withe: #fff;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing:inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    padding: 2rem
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+     to right  bottom,
+     $color-primary,
+     $color-secondary ),
+     url('../img/nba-wallpapers2.jpg');
+    background-size: cover;
+    background-position: center ;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+
+} 
+  
+.header__logo-box{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.header__logo{
+    height: 10rem;
+}
+
+
+
+.heading-primary{
+    color: $color-withe;
+    text-transform: uppercase;
+
+}
+
+.heading-primary--main{
+    display:block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+
+    
+    /* aimation config */
+    animation-name: moveInLeft;
+    animation-duration:2s;
+    animation-timing-function: ease-in;
+
+
+}
+
+.heading-primary--sub{
+    display:block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+
+    /* aimation config */
+    animation: moveInRight 2s ease-in;
+    
+    
+}
+
+.header__text-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+    
+}
+
+
+
+
+
+
+
+@keyframes moveInLeft{
+    0%{opacity:0; transform: translateX(-10rem)}
+    
+    40%{transform: translateX(2rem)}
+    
+    100%{opacity:1;transform: translate(0)}
+}
+
+@keyframes moveInRight{
+    0%{opacity:0; transform: translateX(20rem)}
+    
+    40%{transform: translateX(-2rem)}
+    
+    100%{opacity:1;transform: translate(0)}
+}
+
+
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative; 
+}
+
+.btn--withe{
+    background-color: $color-withe;
+    color: $color-grey;
+    border-radius:2rem;
+    position: absolute;
+    top:120%;
+    left:30%;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-primary-light,0.603);
+    color:$color-primary-light;
+}
+
+.btn:active{
+    transform: translateY(-1px); 
+    box-shadow: 0 1rem 1rem rgba(209, 9, 9, 0.432);
+
+}
+
+#pà{
+    color: $color-withe;
+    
+}
+
+
+
