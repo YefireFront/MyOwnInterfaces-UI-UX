@@ -1,0 +1,70 @@
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+     to right  bottom,
+     $color-primary,
+     $color-secondary ),
+     url('../img/nba-wallpapers2.jpg');
+    background-size: cover;
+    background-position: center ;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+
+    &__logo-box{
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
+
+    &__logo{
+        height: 10rem;
+    }
+    
+
+    &__text-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+    
+}
+
+    
+} 
+  
+.heading-primary{
+    color: $color-withe;
+    text-transform: uppercase;
+
+    &--main{
+        display:block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 2.5rem;
+    
+        
+        /* aimation config */
+        animation-name: moveInLeft;
+        animation-duration:2s;
+        animation-timing-function: ease-in;
+    
+    
+    }
+    
+    &--sub{
+        display:block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+        margin-bottom: 2rem;
+    
+        /* aimation config */
+        animation: moveInRight 2s ease-in;
+        
+        
+    }
+
+}
+
+
