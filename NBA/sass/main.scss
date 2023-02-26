@@ -1,17 +1,22 @@
+//?ABSTRACT
 @import "abstracts/mixin";
 @import "abstracts/variables";
 @import "abstracts/functions.scss";
 
+//?BASE
 @import "base/globals";
 @import "base/animations";
 @import "base/typography";
 @import "base/_utilities";
 
 
+//?COMPONENET
 @import "component/button";
 
+//*?HEADER
 @import "layout/header";
 
+//?PAGES
 @import "pages/home";
 
 
