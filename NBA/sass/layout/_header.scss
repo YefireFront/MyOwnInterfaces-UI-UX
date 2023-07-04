@@ -6,16 +6,16 @@
      $color-primary,
      $color-secondary ),
      url('../img/nba-wallpapers2.jpg');
-    background-size: cover;
-    background-position: center ;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    position: relative;
+    background-size: cover; /* The background image will be adjusted and completely cover the container. */
+    background-position: center ;  /* The position of the background image is set to the center of the container. */
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); /* We define a clipping shape for the header container using polygonal coordinates. */
+    position: relative; /* We change the position of the element to absolute, which will allow precise positioning relative to its primary element. */
 
     &__logo-box{
         position: absolute;
         top: 3rem;
         left: 3rem;
-    }
+    } 
 
     &__logo{
         height: 10rem;
