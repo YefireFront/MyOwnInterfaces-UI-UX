@@ -1,3 +1,7 @@
+/*
+* first line color */
+/* 
+*secunde line color */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *,
 *::after,
@@ -77,11 +81,11 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(243, 37, 37, 0.862745098), rgba(61, 100, 185, 0.8980392157)), url("../img/nba-wallpapers2.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* The background image will be adjusted and completely cover the container. */
+  background-position: center; /* The position of the background image is set to the center of the container. */
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  position: relative;
+          clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); /* We define a clipping shape for the header container using polygonal coordinates. */
+  position: relative; /* We change the position of the element to absolute, which will allow precise positioning relative to its primary element. */
 }
 .header__logo-box {
   position: absolute;
