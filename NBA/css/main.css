@@ -50,6 +50,12 @@ body {
     transform: translate(0);
   }
 }
+.section {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -124,4 +130,10 @@ body {
   margin-bottom: 2rem;
   /* aimation config */
   animation: moveInRight 2s ease-in;
+}
+
+.section {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }/*# sourceMappingURL=main.css.map */
