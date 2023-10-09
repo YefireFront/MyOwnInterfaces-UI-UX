@@ -148,119 +148,97 @@ body {
     }
 }
 
-// .loader{
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: absolute;
-//     z-index: 30;
-//     background-color: white;
-
-//     animation: loader 2s linear forwards;
-
-
-//     div{
-//         background: red;
-//         width: 30px;
-//         height: 30px;
-//         border-radius: 50%;
-//         margin: 0 10px;
-//         transform: scale(0);
-
-//         animation: scaling 1s ease infinite;
-
-//         &:nth-child(1){
-//             background-color: blue;
-//             animation-delay: 0.2s;
-
-//         }
-//         &:nth-child(2){
-//             background-color: rgb(255, 196, 0);
-//             animation-delay: 0.4s;
-
-//         }
-//         &:nth-child(3){
-//             background-color: blue;
-//             animation-delay: 0.6s;
-
-//         }
-//     }
-
-// }
-
-.modal{
+.loader{
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    z-index: 40;
+    z-index: 30;
+    background-color: white;
 
-    display: grid;
-    place-items: center;
+    animation: loader 1.9s linear forwards;
 
-    &__content{
-        background-color: darkcyan;
-        width: 50%;
-        height: 50%;
 
+    div{
+        background: red;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: 0 10px;
+        transform: scale(0);
+
+        animation: scaling 1s ease infinite;
+
+        &:nth-child(1){
+            background-color: blue;
+            animation-delay: 0.2s;
+
+        }
+        &:nth-child(2){
+            background-color: rgb(255, 196, 0);
+            animation-delay: 0.4s;
+
+        }
+        &:nth-child(3){
+            background-color: blue;
+            animation-delay: 0.6s;
+
+        }
+    }
+
+}
+
+
+
+@keyframes scaling{
+    0%{
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+
+}
+
+@keyframes loader{
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    80%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
     }
 }
-.hidden{
-    display: none;
-}
-.visible{
-    display: grid;
-}
 
-// @keyframes scaling{
-//     0%{
-//         transform: scale(0.2);
-//     }
-//     50%{
-//         transform: scale(1);
-//     }
-//     100%{
-//         transform: scale(0);
-//     }
+@keyframes navbar {
 
-// }
-
-// @keyframes loader{
-//     0%{
-//         opacity: 1;
-//         visibility: visible;
-//     }
-//     80%{
-//         opacity: 1;
-//         visibility: visible;
-//     }
-//     100%{
-//         opacity: 0;
-//         visibility: hidden;
-//     }
-// }
-
-// @keyframes navbar {
-
-//     0%{transform: translateY(-200px);}
-//     100%{transform: translateY(0);}
+    0%{transform: translateY(-200px);}
+    100%{transform: translateY(0);}
     
-// }
+}
 
-// @keyframes side-context-texto {
-//     0%{opacity: 0;}
-//     100%{opacity: 1;}
-// }
+@keyframes side-context-texto {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
-// @keyframes Bron {
-//     0%{transform: translateX(600px)}
-//     50%{transform: translateX(-70px)}
-//     100%{transform: translateX(0)}
-// }
+@keyframes Bron {
+    0%{transform: translateX(600px)}
+    50%{transform: translateX(-70px)}
+    100%{transform: translateX(0)}
+}
 
-// @keyframes footer {
-//     0%{transform: translateY(200px);}
-//     100%{transform: translateY(0);}
-// }
+@keyframes footer {
+    0%{transform: translateY(200px);}
+    100%{transform: translateY(0);}
+}
