@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,600;0,700;0,800;1,700;1,800&display=swap");
+
+:root {
+  /* ### Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+  /*Fondo*/
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  /*Circulo */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: var(--Pale-blue);
+}
+
+.conatiner {
+  width: 730px;
+  height: 530px;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    var(--Light-slate-blue) 0%,
+    var(--Light-royal-blue) 98%
+  );
+  color: white;
+  border-radius: 30px;
+}
+
+.left h2 {
+  color: var(--Light-lavender);
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    var(--Violet-blue) 0%,
+    var(--Persian-blue) 78%
+  );
+}
+
+.circle span {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.circle p {
+  color: var(--Light-lavender);
+}
+
+.left h4 {
+  font-size: 35px;
+}
+
+.left p {
+  text-align: center;
+  color: var(--Light-lavender);
+  font-size: 18px;
+}
+
+
+
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+
+}
+
+.right h3 {
+  color:black;
+  font-size: 30px;
+}
+
+.right .boxes{
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+.right .boxes .box{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 15px 0;
+  height: 50px;
+  border-radius: 5px;
+  
+}
+
+.right .boxes .box .numbers{
+  color: black;
+}
+.right .boxes .box span{
+  color:var(--Dark-gray-blue);
+  font-weight: bold;
+}
+
+.right .boxes .box .icono-word{
+  display: flex;
+  font-weight: bold;
+}
+.right .boxes .box .icono-word img{
+  margin-right: 12px;
+
+}
+
+
+
+.Reaction{
+  background-color:#f7c8cf2f;
+  color: var(--Light-red);
+}
+.Memory{
+  background-color:#f9c26b23;
+  color: var(--Orangey-yellow);
+}
+.Verbal{
+  background-color:#00bb8f13;
+  color: var(--Green-teal);
+}
+.Visual{
+  background-color:#2d3ed915;
+  color: var(--Cobalt-blue);
+}
+
+.right button{
+  height: 55px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--Dark-gray-blue);
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.right button:hover{
+  background: linear-gradient(
+    175deg,
+    var(--Light-slate-blue) 0%,
+    var(--Light-royal-blue) 158%
+  );
+  cursor: pointer;
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    font-size: 16px;
+  }
+
+  .conatiner{
+    flex-direction: column;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    
+  }
+
+  .left{
+    min-width: 100%;
+    min-height: 45%;
+    border-radius: 0 0 25px 25px;
+  }
+  .right{
+    min-width: 100%;
+    min-height: 55%
+    
+    
+  }
+
+  .right h3{
+    font-size: 16px;
+  }
+
+
+
+}

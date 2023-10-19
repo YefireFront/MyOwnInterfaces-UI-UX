@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+//Primary
+$Tomato: hsl(4, 100%, 67%);
+
+//Neutral
+$Dark-Slate-Grey: hsl(234, 29%, 20%);
+$Charcoal-Grey: hsl(235, 18%, 26%);
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);
+
+//Font
+$font: "Open Sans", sans-serif;
+$font2: "Poppins", sans-serif;
+$font3: "Roboto", sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: $font3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: $Dark-Slate-Grey;
+}
+
+.main{
+
+    display: flex;
+    border: 1px solid palegreen;
+    width: 820px;
+    height: 500px;
+    border-radius: 25px;
+    background-color: $White;
+    
+
+    &__content{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 50px 40px;
+
+
+        &__list__item{
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+
+            img{
+                margin-right: 15px;
+            }
+
+        }
+
+
+
+
+        &__title{
+            font-size: 50px;
+            text-align: center;
+        }
+
+        &__label{
+            font-weight: bold;
+        }
+
+        &__input{
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid $Grey;
+        }
+        
+        &__button{
+            padding: 15px;
+            background-color: $Dark-Slate-Grey;
+            color: $White;
+            border-radius: 5px;
+
+        }
+
+    }
+
+
+    &__image{
+        width: 45%;
+        display: flex;
+
+     img{
+        height: auto;
+        width: 320px;
+        margin: 0 auto;
+     }
+    }
+}
+
+

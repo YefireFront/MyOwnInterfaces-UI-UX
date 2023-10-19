@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;800&display=swap');
+:root{
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    --Green : #53feac;
+    --GreenII : #53e4fe;
+    
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--DarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.container{
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 100%;
+    width: 600px;  
+    text-align: center;
+}
+
+h1{
+    font-size:10px;
+    color: var(--Green);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+#advice{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing:1px;
+    margin: 50px auto;
+    max-width: 550px;
+}
+
+.luz{
+    background-color:var(--Green);
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    overflow: hidden;
+    
+}
+
+.luz:hover{
+    background-color:var(--GreenII);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 21px 0px #4AFF94; 
+    box-shadow: 0px 0px 21px 0px #4AFF94;
+}
+

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700;800&display=swap');
+
+:root{
+--VeryDarkMagenta: hsl(300, 43%, 22%);
+--SoftPink: hsl(333, 80%, 67%);
+
+
+--DarkGrayishMagenta: hsl(303, 10%, 53%);
+--LightGrayishMagenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container{
+
+    display:grid;
+    grid-template-rows:  repeat(2, 1fr) ;
+    width: 1350px;
+    height: 800px;
+
+}
+
+.container .up{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+
+}
+
+.container .up .left h1{
+    color: var(--VeryDarkMagenta);
+    font-size: 38px;
+    font-weight: 800 ;
+
+}
+
+.container .up .left p{
+    color: var(--DarkGrayishMagenta);
+    font-weight: 600 ;
+    line-height: 180%;
+}
+
+
+.container .up .right .banner {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--LightGrayishMagenta);
+    margin: 20px;
+    width: 500px;
+    height: 65px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.container .up .right .s2 {
+    margin-left:70px;
+}
+
+.container .up .right .s3 {
+    margin-left:140px;
+}
+
+
+.container .up .right .banner h3{
+    color: var(--VeryDarkMagenta);
+    font-size: 16px;
+    font-weight:800 ;
+    margin-right: 60px;
+  
+}
+
+.container .up .right .banner .start{
+    color: rgb(218, 137, 32);
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 150px;
+    
+}
+
+
+
+.container .down{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr) 
+}
+
+
+.container .down .morado{
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: rgb(97, 15, 93);
+    padding:30px;
+    border-radius: 15px;
+    height: 250px;
+}
+
+.container .down .morado img{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.container .down .morado .morado-up{
+    display:flex;
+}
+
+.container .down .morado .morado-up h4{
+    color: var(--White);
+    margin-left: 20px;
+    display:block;
+    line-height: 25px;
+}
+.container .down .morado .morado-up span{
+    color: var(--SoftPink);
+    font-weight: 200;
+    
+}
+
+.container .down .morado .morado-up h5{
+    color: var(--SoftPink);
+    font-weight: 200;
+    display:inline-block;
+    
+}
+
+.container .down  p{
+    color: rgb(236, 236, 236);
+  line-height: 30px;
+}
+
+.container .down .m1{
+    position: relative;
+    top:-20px
+}
+
+.container .down .m3{
+    position: relative;
+    top:20px
+}

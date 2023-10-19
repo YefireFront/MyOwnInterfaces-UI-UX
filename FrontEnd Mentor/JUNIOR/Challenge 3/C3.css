@@ -1,0 +1,138 @@
+@import url('https://fonts.google.com/specimen/Overpass');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+--Orange: hsl(25, 97%, 53%);
+    
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 9%, 66%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--midleDarkBlue: hsl(213, 17%, 21%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--VeryDarkBlue);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+   
+  
+}
+
+.container {
+    background-color: var(--DarkBlue);
+    width:500px;
+    height: 500px;
+    border-radius:5%;  
+    display:grid;
+    grid-template-rows: 2fr 1fr 2fr 2fr 2fr;
+    padding:22px;
+    
+}
+
+.container h1{
+    color: var(--White)
+}
+
+.container p{
+    height: 100%;
+    color: var(--LightGrey);
+    text-align: justify;
+    font-size: 18px;
+    line-height: 29px;
+    
+  
+}
+.button{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+
+
+
+.list{
+    width: 70px;
+    height: 70px;
+    background-color: var(--midleDarkBlue);
+    border-radius: 50%;
+    display: inline-block;
+    border:none
+}
+
+.list a {
+    color: var(--LightGrey);
+    text-decoration: none;
+    display:flex;
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    font-size:18px
+
+
+}
+.list:hover a{
+    background-color: var(--LightGrey);
+    color: var(--White);
+    border-radius:50%;
+}
+
+.list:active a{
+    background-color: var(--Orange);
+    color: var(--White);
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+.btn{
+    background-color: var(--Orange);
+    height:60px ;
+    border-radius: 40px;
+    color: var(--White);
+    font-size: 20px;
+    margin-top: 25px;
+    letter-spacing: 3px;
+
+}
+.btn:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.start{
+    width: 70px;
+    height: 70px;
+    background-color: var(--midleDarkBlue);
+    border-radius: 50%;
+    
+}
+
+.start i{
+
+    display:flex;
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    font-size:20px;
+    color: var(--Orange)
+}
+

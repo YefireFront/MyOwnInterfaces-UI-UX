@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  font-family: "Plus Jakarta Sans", sans-serif; /* Establece la fuente de texto para todos los elementos */
+  margin: 0; /* Establece los márgenes de todos los elementos en 0 */
+  padding: 0; /* Establece el relleno de todos los elementos en 0 */
+  box-sizing: border-box; /* Define el modelo de caja como "border-box" para todos los elementos */
+}
+
+body {
+  min-height: 100vh; /* Establece la altura mínima del cuerpo (body) al 100% de la altura de la ventana */
+  display: flex; /* Utiliza el modelo de caja flexible */
+  justify-content: center; /* Centra horizontalmente el contenido del cuerpo */
+  background-color: hsl(210, 60%, 98%); /* Establece el color de fondo del cuerpo utilizando una variable llamada $Very-light-grayish-blue */
+}
+
+.container {
+  margin: 2rem; /* Establece un margen de 2 rem (unidad relativa) alrededor del contenedor */
+  width: 700px; /* Establece un ancho fijo de 700 píxeles para el contenedor */
+  background-color: hsl(0, 0%, 100%); /* Establece el color de fondo del contenedor utilizando una variable llamada $White */
+  padding: 1.5rem 1rem; /* Establece un relleno vertical de 1.5 rem y un relleno horizontal de 1 rem para el contenedor */
+  border-radius: 0.5rem; /* Establece un radio de borde de 0.5 rem para redondear las esquinas del contenedor */
+}
+
+header {
+  display: flex; /* Aplica el modelo de caja flexible al elemento 'header' */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro del 'header' */
+  justify-content: space-between; /* Distribuye los elementos secundarios del 'header' de manera equitativa con espacio entre ellos */
+  margin: 2rem; /* Establece un margen de 2 rem (unidad relativa) alrededor del 'header' */
+}
+
+.notif_box {
+  display: flex; /* Aplica el modelo de caja flexible al elemento con la clase 'notif_box' */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro de 'notif_box' */
+  justify-content: start;
+}
+
+#notificacion {
+  width: 35px; /* Establece un ancho fijo de 35 píxeles para el elemento con el id 'notificacion' */
+  height: 30px; /* Establece una altura fija de 30 píxeles para el elemento con el id 'notificacion' */
+  display: flex; /* Aplica el modelo de caja flexible al elemento con el id 'notificacion' */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro de 'notificacion' */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios dentro de 'notificacion' */
+  margin-left: 1.5rem; /* Establece un margen izquierdo de 5 rem (unidad relativa) para el elemento con el id 'notificacion' */
+  color: hsl(0, 0%, 100%); /* Establece el color de texto del elemento con el id 'notificacion' utilizando una variable llamada $White */
+  background-color: hsl(219, 85%, 26%); /* Establece el color de fondo del elemento con el id 'notificacion' utilizando una variable llamada $Blue */
+  font-weight: 800; /* Establece el grosor de fuente del elemento con el id 'notificacion' a 800 */
+  border-radius: 0.5rem; /* Establece un radio de borde de 0.5 rem para redondear las esquinas del elemento con el id 'notificacion' */
+}
+
+#mark_all {
+  cursor: pointer; /* Establece el cursor del elemento con el id 'mark_all' como un puntero */
+}
+
+.mark_all:hover {
+  color: hsl(219, 85%, 26%); /* Cambia el color del texto del elemento con la clase 'mark_all' a través de un pseudo-estado de 'hover' utilizando una variable llamada $Blue */
+}
+
+p {
+  color: hsl(224, 21%, 14%); /* Establece el color del texto de todos los elementos <p> a través de una variable llamada $Very-dark-blue */
+}
+
+main {
+  display: flex; /* Aplica el modelo de caja flexible al elemento 'main' */
+  flex-direction: column; /* Establece la dirección de los elementos secundarios dentro de 'main' como columna */
+  gap: 1rem; /* Establece un espacio vertical de 1 rem (unidad relativa) entre los elementos secundarios de 'main' */
+}
+
+.notif_card {
+  display: flex; /* Aplica el modelo de caja flexible al elemento con la clase 'notif_card' */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro de 'notif_card' */
+  border: 0.5rem; /* Establece un ancho de borde de .5 rem alrededor de 'notif_card' */
+  padding: 1rem; /* Establece un relleno de 1 rem alrededor de 'notif_card' */
+}
+
+img {
+  width: 50px; /* Establece un ancho fijo de 50 píxeles para todas las imágenes */
+}
+
+.description {
+  margin-left: 1rem; /* Establece un margen izquierdo de 1 rem para el elemento con la clase 'description' */
+  display: flex; /* Aplica el modelo de caja flexible al elemento con la clase 'description' */
+  flex-direction: column; /* Establece la dirección de los elementos secundarios dentro de 'description' como columna */
+  justify-content: space-between; /* Distribuye los elementos secundarios de 'description' de manera equitativa con espacio entre ellos */
+}
+
+strong {
+  color: hsl(224, 21%, 14%); /* Establece el color del texto de todos los elementos <strong> a través de una variable llamada $Very-dark-blue */
+  cursor: pointer; /* Establece el cursor de todos los elementos <strong> como un puntero */
+}
+
+strong:hover {
+  color: hsl(219, 85%, 26%); /* Cambia el color del texto de los elementos <strong> a través de un pseudo-estado de 'hover' utilizando una variable llamada $Blue */
+}
+
+.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.unread p:first-of-type::after {
+  content: ""; /* Define el contenido del pseudo-elemento ::after como una cadena vacía */
+  background-color: hsl(1, 90%, 64%); /* Establece el color de fondo del pseudo-elemento ::after utilizando una variable llamada $Red */
+  width: 10px; /* Establece un ancho de 10 píxeles para el pseudo-elemento ::after */
+  height: 10px; /* Establece una altura de 10 píxeles para el pseudo-elemento ::after */
+  display: inline-block; /** Muestra el pseudo-elemento ::after como un elemento en línea con dimensiones */
+  border-radius: 50%; /* Establece un radio de borde del 50% para crear una forma de círculo en el pseudo-elemento ::after */
+}
+
+.message_card {
+  display: flex; /* Aplica el modelo de caja flexible al elemento con la clase 'message_card' */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro de 'message_card' */
+}
+
+.message {
+  padding: 1rem; /* Establece un relleno de 1 rem alrededor del elemento con la clase 'message' */
+  border: 1px solid hsl(205, 33%, 90%); /* Establece un borde de 1 píxel sólido con un color definido por la variable $Light-grayish-blue-2 */
+  border-radius: 0.3rem; /* Establece un radio de borde de 0.3 rem para redondear las esquinas del elemento con la clase 'message' */
+  cursor: pointer; /* Establece el cursor del elemento con la clase 'message' como un puntero */
+  margin: 0 0 0 5rem; /* Establece un margen de 0 en la parte superior, inferior y derecha, y un margen izquierdo de 5 rem para el elemento con la clase 'message' */
+}
+
+.message:hover {
+  background-color: hsl(211, 68%, 94%); /* Cambia el color de fondo del elemento con la clase 'message' a través de un pseudo-estado de 'hover' utilizando una variable llamada $Light-grayish-blue-1 */
+}
+
+.chess_img {
+  margin-left: auto; /* Establece un margen izquierdo automático para el elemento con la clase 'chess_img' para empujarlo hacia la derecha dentro de su contenedor */
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    margin: 0; /* Establece un margen de 0 para el elemento con la clase 'container' solo cuando la anchura de la pantalla sea igual o menor a 550 píxeles */
+  }
+}/*# sourceMappingURL=style.css.map */

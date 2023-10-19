@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  width: 90%;
+  height: 700px;
+  background-image: url(../images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+}
+.Card__imagenes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.Card__imagenes__img-logo {
+  width: 200px;
+  height: auto;
+}
+.Card__imagenes__img-mobile {
+  width: 570px;
+  height: auto;
+}
+.Card__texto {
+  display: inline;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Card__texto h2 {
+  color: aliceblue;
+  font-size: 42px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.Card__texto p {
+  color: rgba(235, 234, 234, 0.842);
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0;
+}
+.Card__texto button {
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  color: aliceblue;
+  background-color: hsl(300, 69%, 71%);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.Card__texto button:hover {
+  cursor: pointer;
+  background-color: hsl(257, 40%, 49%);
+  border: 1px solid hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+  box-shadow: -2px 9px 8px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=Style.css.map */

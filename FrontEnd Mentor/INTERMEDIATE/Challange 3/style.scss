@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$font1: "Public Sans", sans-serif;
+
+$-DarkBlue: hsl(233, 26%, 24%);
+$-Lime-Green: hsl(136, 65%, 51%);
+$-Bright-Cyan: hsl(192, 70%, 51%);
+$-Grayish-Blue: hsl(233, 8%, 62%);
+$-Light-Grayish-Blue: hsl(220, 16%, 96%);
+$-Very-Light-Gray: hsl(0, 0%, 98%);
+$-White: hsl(0, 0%, 100%);
+
+//*MIXIN
+@mixin flex($direction, $just, $aling) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $just;
+  align-items: $aling;
+}
+
+@mixin button {
+  background: rgb(9, 9, 121);
+  background: linear-gradient(90deg, $-Lime-Green 6%, $-Bright-Cyan 100%);
+  padding: 10px 30px;
+  color: $-White;
+  border-radius: 25px;
+  font-size: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  overflow-x: hidden;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 90vh;
+
+
+  &__nav {
+    width: 100%;
+    height: 10%;
+    @include flex(row, space-between, center);
+    z-index: 100;
+    position: relative;
+    background-color: white;
+    padding: 0 200px;
+
+    &-links {
+      width: 450px;
+      ul {
+        @include flex(row, space-between, center);
+        color: $-Grayish-Blue;
+        list-style-type: none;
+      }
+    }
+
+    &-button {
+      @include button;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    position: relative;
+    z-index: 0;
+
+    &-right {
+      width: 60%;
+      background-image: url(../images/bg-intro-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: 2px -250px;
+      @include flex(row, center, center);
+      position: relative;
+
+      img {
+        width: 80%;
+        position: absolute;
+        right: -140px;
+      }
+    }
+
+    &-left {
+      width: 50%;
+      padding-left: 200px;
+
+      h1 {
+        font-size: 50px;
+        font-weight: 100;
+        margin-top: 150px;
+      }
+
+      p {
+        color: $-Grayish-Blue;
+        font-size: 16px;
+        line-height: 30px;
+      }
+      a {
+        @include button();
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  height: 180vh;
+  background-color: $-Very-Light-Gray;
+
+  &__bank {
+    width: 100%;
+    height: 50%;
+    background-color: $-Light-Grayish-Blue;
+
+    &-top {
+      height: 40%;
+      margin: 0 200px;
+      @include flex(column, end, start);
+
+      h2 {
+        font-size: 45px;
+        font-weight: 100;
+      }
+      p {
+        font-size: 24px;
+        color: $-Grayish-Blue;
+        line-height: 28px;
+        margin-bottom: 50px;
+      }
+    }
+
+    &-bottom {
+      height: 60%;
+      margin: 0 200px;
+
+      &__cards {
+        @include flex(row, space-between, center);
+
+        div {
+          width: 24%;
+
+          h4 {
+            font-size: 28px;
+            font-weight: 100;
+          }
+
+          p {
+            font-size: 20px;
+            line-height: 30px;
+            color: $-Grayish-Blue;
+          }
+        }
+      }
+    }
+  }
+
+  &__articles {
+    width: 100%;
+    height: 50%;
+    background-color: $-White;
+    border: 1px solid palegreen;
+
+    h2 {
+      margin: 150px 0 52px 200px;
+      font-size: 50px;
+      font-weight: 100;
+    }
+
+    &__cards {
+      height: 60%;
+      margin: 0 200px;
+      @include flex(row, space-between, center);
+
+      .card {
+        width: 300px;
+        height: 400px;
+
+        &__top {
+          height: 50%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &__down {
+          height: 50%;
+          padding: 10px 20px;
+          background-color: $-White;
+
+          h4 {
+            margin: 10px 0 0 0;
+            font-size: 10px;
+            color: $-Grayish-Blue;
+          }
+
+          h5 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 10px 0;
+          }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            color: $-Grayish-Blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: $-DarkBlue;
+
+  &__info {
+    margin: 0 200px;
+    height: 100%;
+    @include flex(row, space-between, center);
+
+    &-left {
+      height: 100%;
+      width: 50%;
+      @include flex(row, space-between, center);
+
+      .iconos {
+        width: 200px;
+        height: 100%;
+        @include flex(column, space-evenly, center);
+        img {
+          margin: 0 5px;
+        }
+      }
+
+      .links {
+        height: 100%;
+        @include flex(column, center, start);
+
+        a {
+          color: $-White;
+          font-size: 14px;
+          color: $-Grayish-Blue;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    &-right {
+      a {
+        @include button();
+        position: relative;
+        right: -60px;
+        bottom: 10px;
+      }
+
+      h5 {
+        color: $-Grayish-Blue;
+      }
+    }
+  }
+}
+ 
