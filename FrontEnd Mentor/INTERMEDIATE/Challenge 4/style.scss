@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$DarkGray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$VeryDarkGray: hsl(0, 0%, 27%);
+
+$font1 :'League Spartan', sans-serif;
+
+$w1: 500;
+$w2: 600;
+$w3: 700;
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-size: 12px;
+    font-family: $font1;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.76rem;
+}
+
+
+#logo{
+    color: $White;
+    font-size: 1.8rem;
+    font-weight: $w2;
+}
+
+.main{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    
+    .slider{
+        position: relative;
+        flex: 2;
+        &__desktop-menu{
+            display: flex;
+            align-items: center;
+            gap:5em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 2em;
+
+            ul{
+                display: flex;
+                gap: 2em;
+
+                li {
+                    a{
+                        font-size: 1.2rem;
+                        color: $White;
+                    }
+                }
+            }
+        }
+
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+    }
+    
+    
+}
+
+.info{
+    flex: 1;
+    display: grid;
+    place-items: center;
+
+    &__text{
+        width: 80%;
+
+        h1{
+            font-size: 2.1rem;
+            line-height: 1;
+        }
+        p{
+            margin: 1em 0;
+            color: $DarkGray;
+            font-size: 1rem;
+            line-height: 1.5;
+        }      
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        color: $Black   ;
+    }
+
+}
+.about{
+    height: 30vh;
+    display: flex;
+    
+}
