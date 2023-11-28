@@ -1,0 +1,73 @@
+@media screen and (max-width: 480px) {
+  /*
+      $main value
+      */
+
+  .main__values {
+    height: 400px;
+
+    &__numbers {
+      text-align: center;
+      flex-direction: column;
+      height: 300px;
+    }
+  }
+
+      /*
+      $main offer
+      */
+      .main__offer{
+
+        .card{
+          height: 350px;
+          
+          
+          &__plan{
+            flex-flow: column nowrap;
+            align-items: start;
+            gap: 10px;
+
+
+            p{
+              font-size: 1rem;
+            }
+            
+          }
+
+          &__price{
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+          }
+          
+        }
+        
+      }
+  
+}
+
+@media screen and (max-width: 500px) {
+  /*
+      $main title
+      */
+
+  .main__title {
+
+    height: 270px;
+
+    &__btn {
+      width: 90%;
+    }
+
+    &__btn {
+      width: 100%;
+      .btn-right {
+        display: none;
+      }
+
+      .btn-left {
+        margin: 0 auto;
+      }
+    }
+  }
+}

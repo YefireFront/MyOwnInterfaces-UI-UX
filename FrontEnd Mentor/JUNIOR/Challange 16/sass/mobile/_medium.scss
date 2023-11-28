@@ -1,0 +1,28 @@
+
+@media screen and (max-width: 650px) {
+    /*
+    $main tittle */
+    .main__title {
+      margin: 0 20px;
+  
+      &__btn {
+        width: 80%;
+      }
+  
+      h1 {
+        margin: 0 20px;
+      }
+    }
+  
+    /*
+   $main value */
+  
+    .main__values {
+      margin: 0 20px;
+  
+      &__numbers {
+        width: 100%;
+        left: 0;
+      }
+    }
+  } 

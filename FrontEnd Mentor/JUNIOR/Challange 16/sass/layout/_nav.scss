@@ -1,0 +1,23 @@
+@use '../utils/mixins' as mixins;
+
+.header__nav{
+    @include mixins.flex ( row, nowrap , space-between, center);
+    padding: 40px 100px ;
+    
+    
+    &__logo{
+        width: 200px;
+    }
+    
+    
+    &__links{
+        @include mixins.flex ( row, nowrap , space-between, start);
+        gap: 40px;
+        color: white;
+
+        a{
+            cursor: pointer;
+        }
+
+    }
+}

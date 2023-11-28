@@ -1,0 +1,10 @@
+@mixin flex ($direction, $wrap , $just, $aling){
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $just;
+    align-items: $aling;
+}
+
+@mixin btn-basic($color){
+     
+} 

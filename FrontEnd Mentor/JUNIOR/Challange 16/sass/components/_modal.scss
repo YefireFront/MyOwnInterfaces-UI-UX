@@ -1,0 +1,133 @@
+@use '../utils/mixins' as mixins;
+@use '../utils/variables' as var;
+
+.container__modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.409);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: 50;
+
+    .cerrar-modal{
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.moda__check{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid;
+    @include mixins.flex (column, nowrap, space-evenly, center);
+    padding: 0 20px;
+    position: absolute;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+
+    img{
+        width: 90px;
+    }
+    h5{
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+
+    p{
+        color: gray;
+        text-align: center;
+        font-size: .9rem;
+        line-height: 28px;
+    }
+
+    a{
+        padding: 15px 25px;
+        background-color: var.$Moderate-cyan;
+        color: white;
+        border-radius: 32px;
+        font-size: .8rem;
+    }
+
+}
+
+
+.modal__select{
+    width: 800px;
+    height: 800px;
+    background-color: white;
+    padding: 40px;
+    .opac{
+        opacity: 0.5;
+    }
+
+    &__title{
+        h4{
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        p{
+            color: gray;
+            margin-bottom: 40px;
+        }
+
+    }
+    
+   
+    &__card{
+
+        height: 150px;
+        border: 1px solid rgb(187, 187, 187);
+        border-radius: 12px;
+        @include mixins.flex(row, nowrap, center, center);
+        gap:20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+        .info{
+            @include mixins.flex(column, nowrap, center, start);
+            gap: 20px;
+            
+            &__up{
+                width: 90%;
+                @include mixins.flex(row, nowrap, space-between, center);
+
+                h4{
+                    font-weight: 800;
+
+                    b{
+                        color: var.$Moderate-cyan;
+                        margin-left: 10px;
+                        font-weight: 600;
+                    }
+                }
+
+                h5{
+                    font-weight: 800;
+
+                    b{
+                        font-weight: 600;
+                        color: gray;
+                        margin-left: 5px;
+                    }
+                }
+
+            }
+
+            p{
+                color: gray;
+                line-height: 30px;
+            }
+
+        }
+
+        input{
+            width: 50px;
+        }
+    }
+
+}
