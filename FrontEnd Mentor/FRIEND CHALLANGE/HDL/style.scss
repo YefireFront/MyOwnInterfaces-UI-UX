@@ -1,0 +1,247 @@
+$dark :#1e1e1e;
+$dark-light :#272727;
+$dark-grey: rgb(191, 191, 191);
+$primary:#c75c49;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 200px;
+    background: $dark;
+}
+
+.app{
+    min-width: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.header{
+    width: 100%;
+    height: 220px;
+    background: $dark;
+    padding: 20px;
+    border-radius: 0 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    &__img{
+        width: 180px;
+        height: 120px;
+        object-fit: contain;
+        
+        
+    }
+    
+    &__nav{
+        margin: 0 auto;
+        width: 40%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            color:$dark-grey;
+
+            &:hover{
+                color: $primary;
+                transform: scale(1.2);
+                transition: all .3s;
+            }
+
+        }
+
+    }
+}
+
+
+.banner{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 24px;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #000;
+        opacity: .7;
+        z-index: 10;
+    }
+    
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: -100px;
+    }
+
+    &__title{
+        position: relative;
+        color: white;
+        z-index: 100;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 30px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+    }
+    &__content{
+        position: relative;
+        color: rgb(208, 208, 208);
+        z-index: 100;
+        text-align: center;
+        margin-top: 20px;
+        letter-spacing: 5px;
+        line-height: 24px;
+        margin: 30px ;
+
+    }
+}
+
+
+
+
+.offer{
+    width: 100%;
+    height: 600px;
+    border-radius: 24px;
+    background: $dark;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+
+
+    &__card{
+     
+
+        background: $dark-light;
+        width: 280px;
+        height: 430px;
+        border-radius: 24px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+
+        &--img{
+            width: 100px;
+            margin-bottom: -30px;
+
+        }
+
+        &--title{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            &::before{
+                content:'';
+                position: absolute;
+                background: $primary;
+                width: 100px;
+                height: 2px;
+                top: 10px;
+                left: 92px;
+            }
+
+            b{
+                color: $primary;
+            }
+        }
+
+        &--content{
+            color: gray;
+            font-size: 12px;
+            margin-top: 5px;
+            line-height: 20px;
+        }
+
+
+    }
+
+    
+}
+
+
+.footer{
+
+    width: 100%;
+    height: 300px;
+    border-top: 2px solid $primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    &__jounary{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        
+    }
+    
+    &__branch{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        
+        
+    }
+
+
+    &__logo{
+        width: 150px;
+        height: 200px;
+
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    &__follow{
+        width: 150px;
+        height: 50px;
+        h4{
+            text-align: center;
+        }
+    
+    
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+    }
+}
