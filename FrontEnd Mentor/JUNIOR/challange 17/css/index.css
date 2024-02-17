@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4em;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:before,
+*:after {
+  content: "";
+  content: none;
+}/*# sourceMappingURL=index.css.map */

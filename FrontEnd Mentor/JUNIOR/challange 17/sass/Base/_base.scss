@@ -1,0 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4em;
+ 
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+button{
+    border: none;
+    background: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    
+}
+
+p a{
+    display: inline;
+}
+
+
+img, 
+picture, 
+video, 
+iframe, 
+figure{
+    max-width: 100%; //We ensure that the multimedia content of these tags is larger than its container.
+    width: 100%;
+    display: block;
+}

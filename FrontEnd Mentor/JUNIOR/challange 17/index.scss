@@ -1,0 +1,19 @@
+//* base
+
+@use './sass/Base/base';
+@use './sass/Base/reset';
+@use './sass/Base/typography';
+
+// //*components
+@use './sass/components/buttons';
+@use './sass/components/carousel';
+
+// //*layout
+@use './sass/layout/header';
+@use './sass/layout/footer';
+
+// //*utils
+// @use './sass/utils/variables';
+// @use './sass/utils/mixins';
+// @use './sass/utils/function';
+    

@@ -1,0 +1,57 @@
+@import '../Utils/variables';
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    line-height: 1.4em;
+    background: $bg;
+ 
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+button{
+    border: none;
+    background: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    
+}
+
+p a{
+    display: inline;
+}
+
+
+img, 
+picture, 
+video, 
+iframe, 
+figure{
+    max-width: 100%; //We ensure that the multimedia content of these tags is larger than its container.
+    width: 100%;
+    display: block;
+}

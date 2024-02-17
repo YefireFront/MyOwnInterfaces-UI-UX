@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Color pallet*/
+/*Typografy*/
+/* Color pallet*/
+/*Typografy*/
+* {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:before,
+*:after {
+  content: "";
+  content: none;
+}
+
+/* Color pallet*/
+/*Typografy*/
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.4em;
+  background: #010103;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.header {
+  background: #fff;
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

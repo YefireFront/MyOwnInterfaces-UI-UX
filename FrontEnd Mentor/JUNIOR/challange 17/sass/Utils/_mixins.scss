@@ -1,0 +1,12 @@
+@mixin flex($direction, $corte, $just, $aling) {
+  display: flex;
+  flex-flow: $direction, $corte;
+  justify-content: $just;
+  align-items: $aling;
+}
+
+@mixin Grid() {
+}
+
+
+

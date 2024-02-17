@@ -1,0 +1,6 @@
+@import '../Utils/mixins';
+.header{
+    background: #fff;
+    @include flex(row, nowrap, center, center );
+
+}

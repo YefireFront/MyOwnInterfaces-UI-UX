@@ -1,0 +1,21 @@
+@import '../Utils/variables';
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    vertical-align: baseline; //Solve some alination problems;
+    font-family: $font1; 
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+*:before, 
+*:after {
+	content: '';
+	content: none;
+}

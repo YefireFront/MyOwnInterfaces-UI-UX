@@ -1,0 +1,17 @@
+//*utils
+@use './Sass/Utils/mixins';
+@use './Sass/Utils/variables';
+
+//* base
+@use './Sass/Base/typography';
+@use './Sass/Base/reset';
+@use './Sass/Base/base';
+
+// //*layout
+@use './sass/layout/header';
+// @use './sass/layout/nav';
+
+// //*components
+// @use './sass/components/buttons';
+// @use './sass/components/container';
+  
