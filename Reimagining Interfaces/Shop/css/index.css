@@ -62,7 +62,6 @@ button {
 
 a {
   text-decoration: none;
-  display: block;
 }
 
 p a {
@@ -79,10 +78,71 @@ figure {
   display: block;
 }
 
+/* Color pallet*/
+/*Typografy*/
 .header {
-  background: #fff;
+  background: #010103;
   display: flex;
   flex-flow: row, nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 7%;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header .logo img {
+  height: 6rem;
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.header .navbar a:hover {
+  color: #d3ad7f;
+  border-bottom: 0.1rem solid #d3ad7f;
+  padding-bottom: 0.5rem;
+  transition: 0.2s linear;
+}
+.header .icons div {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+.header .icons div:hover {
+  color: #d3ad7f;
+}
+.header .icons #menu-btn {
+  display: none;
+}
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #000;
+  text-transform: none;
+}
+.header .search-form label {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: #000;
+}
+.header .search-form label:hover {
+  color: #d3ad7f;
 }/*# sourceMappingURL=index.css.map */
