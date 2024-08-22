@@ -1,0 +1,23 @@
+.cartas{
+    /* border: 2px solid firebrick; */
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carta{
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 14px 15px 27px -16px rgba(0,0,0,0.75);
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
