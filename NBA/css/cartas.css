@@ -28,39 +28,3 @@
   color: white;
   height: 150px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-}
-
-.card-btn {
-  border: none;
-  width: 90px;
-  height: 30px;
-  border-radius: 14px;
-}
-
-.f2 {
-  background-image: url(../img/kb.jpg);
-  background-size: 300px;
-  transition: all .2s ease;
-}
-
-.f3{
-    background-image: url(../img/gg.jpg);
-    background-size: 300px
-
-}
-.f3:hover{
-    background-size: 400px;
-    transition: all .5s ease;
-    cursor: pointer;
-}
-
-.f2:hover{
-    background-size: 400px;
-    transition: all .5s ease;
-    cursor: pointer;
-    scale:1;
-}
